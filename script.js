@@ -1,6 +1,6 @@
 $('#currentDay').text('Today is: ' + dayjs().format('dddd, MM/DD/YY'));
 $(function loadTimeBlocks () {
-  for (let i = 9; i < 17; i++) {
+  for (let i = 9; i < 18; i++) {
     let time = dayjs().format('H')
     let timeBlock = $('<div id = "hour-' + i + '" class = "row time-block past" id="test"></div>')
     $('#timeBlockContainer').append(timeBlock)
