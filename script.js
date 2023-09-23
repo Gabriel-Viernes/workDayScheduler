@@ -16,6 +16,13 @@ $(function loadTimeBlocks () {
     timeBlock.append('<button class="btn saveBtn col-2 col-md-1" aria-label="save"><i class="fas fa-save" aria-hidden="true"></i></button>');
   }
 })
+$(function saveEvent() {
+  $('.saveBtn').on('click', function() {
+    let savedString = $(this).prev().val();
+    let btnParentId = $(this).parent().attr('id');
+    localStorage.setItem(btnParentId, savedString)
+  })
+})
 
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
