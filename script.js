@@ -1,5 +1,9 @@
 $(function loadTimeBlocks () {
-  
+  for (let i = 9; i < 18; i++) {
+    let timeBlock = $('<div id = "hour-' + i + ' class = "row time-block"</div>')
+    timeBlock.append('<div class = "col-2 col-md-1 hour text-center py-3">' + i + ':00' + '</div>');
+    timeBlock.append('<textarea class = ')
+  }
   
   $('#timeBlockContainer')
 })
