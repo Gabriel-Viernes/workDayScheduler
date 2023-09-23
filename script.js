@@ -1,12 +1,13 @@
 $(function loadTimeBlocks () {
-  for (let i = 9; i < 18; i++) {
-    let timeBlock = $('<div id = "hour-' + i + ' class = "row time-block"</div>')
+  for (let i = 9; i < 17; i++) {
+    let timeBlock = $('<div id = "hour-' + i + '" class = "row time-block past" id="test"></div>')
+    $('#timeBlockContainer').append(timeBlock)
     timeBlock.append('<div class = "col-2 col-md-1 hour text-center py-3">' + i + ':00' + '</div>');
-    timeBlock.append('<textarea class = ')
+    timeBlock.append('<textarea class = "col-8 col-md-10 description" rows="3"> </textarea>');
+    timeBlock.append('<button class="btn saveBtn col-2 col-md-1" aria-label="save"><i class="fas fa-save" aria-hidden="true"></i></button>');
   }
-  
-  $('#timeBlockContainer')
 })
+
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
